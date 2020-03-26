@@ -1,32 +1,32 @@
-const express = require('express')
-const routes = require('./routes')
+const express = require('express');
+const routes = require('./routes');
 
-const app = express()
+const app = express();
 
-app.use(express.json()) // Informa ao Express para utilizar o body das requisições em formato json
-app.use(routes)
-app.listen(3333)
+app.use(express.json()); // Informa ao Express para utilizar o body das requisições em formato json
+app.use(routes);
+app.listen(3333);
 
 /* 
-    <-- HTTP Request -->
+  <-- HTTP Request -->
 
-    GET: Obter informações do backend
-    POST: Criar informações no backend
-    PUT: Alterar informações no backend
-    DELETE: Deletar informações no backend
+  GET: Obter informações do backend
+  POST: Criar informações no backend
+  PUT: Alterar informações no backend
+  DELETE: Deletar informações no backend
 */
 
 /* 
-    <-- Tipos de Parâmetros -->
+  <-- Tipos de Parâmetros -->
 
-    Query Params: Parâmetros nomeados enviados na rota após o '?' (filtros, paginação, ...)
-    Route Params: Parâmetros utilizados para identificar recursos
-    Request Body: Corpo da requisição utilizado para criar ou alterar recursos
+  Query Params: Parâmetros nomeados enviados na rota após o '?' (filtros, paginação, ...)
+  Route Params: Parâmetros utilizados para identificar recursos
+  Request Body: Corpo da requisição utilizado para criar ou alterar recursos
 */
 
 /* 
-    <-- Databases -->
+  <-- Databases -->
 
-    Drivers: SELECT * FROM users
-    Query Builders: table('users')->select('*').where()
+  Drivers: SELECT * FROM users
+  Query Builders: table('users')->select('*').where()
 */
