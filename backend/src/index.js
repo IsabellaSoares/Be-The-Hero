@@ -1,8 +1,11 @@
 const express = require('express')
+const routes = require('./routes')
 
 const app = express()
 
 app.use(express.json()) // Informa ao Express para utilizar o body das requisições em formato json
+app.use(routes)
+app.listen(3333)
 
 /* 
     <-- HTTP Request -->
@@ -21,22 +24,9 @@ app.use(express.json()) // Informa ao Express para utilizar o body das requisiç
     Request Body: Corpo da requisição utilizado para criar ou alterar recursos
 */
 
-app.get('/users/:id', (request, response) => {
-    const routeParams = request.params
-    console.log('Route params >> ', routeParams)
+/* 
+    <-- Databases -->
 
-    const queryParams = request.query
-    console.log('Query params >> ', queryParams)
-
-    return response.json({
-        evento: 'Semana OmniStack 11.0',
-        aluno: 'Isabella Soares'
-    })
-})
-
-app.post('/users', (request, response) => {
-    const requestBody = request.body
-    console.log('Request body >> ', requestBody)
-})
-
-app.listen(3333)
+    Drivers: SELECT * FROM users
+    Query Builders: table('users')->select('*').where()
+*/
