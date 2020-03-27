@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Header ({ title }) {
+function Header ({ children }) {
   return (
     <header>
-      <h1>{title}</h1>
+      <h1>{children}</h1>
     </header>
   );
 }
