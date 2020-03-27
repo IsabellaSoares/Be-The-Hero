@@ -1,13 +1,15 @@
 const express = require('express');
 const routes = require('./routes');
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors());
 app.use(express.json()); // Informa ao Express para utilizar o body das requisições em formato json
 app.use(routes);
 app.listen(3333);
 
-/* 
+/*
   <-- HTTP Request -->
 
   GET: Obter informações do backend
@@ -16,7 +18,7 @@ app.listen(3333);
   DELETE: Deletar informações no backend
 */
 
-/* 
+/*
   <-- Tipos de Parâmetros -->
 
   Query Params: Parâmetros nomeados enviados na rota após o '?' (filtros, paginação, ...)
@@ -24,7 +26,7 @@ app.listen(3333);
   Request Body: Corpo da requisição utilizado para criar ou alterar recursos
 */
 
-/* 
+/*
   <-- Databases -->
 
   Drivers: SELECT * FROM users
