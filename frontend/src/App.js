@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from 'react';
-import Logon from './pages/Logon';
+import React from 'react';
+import Routes from './routes';
 
 function App() {
 	return (
-		<Logon />
+		<Routes />
 	);
 }
 
