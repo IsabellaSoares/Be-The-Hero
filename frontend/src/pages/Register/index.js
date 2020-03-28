@@ -7,6 +7,7 @@ import api from '../../services/api';
 
 const Register = () => {
 
+  const history = useHistory();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [whatsapp, setWhatsapp] = useState('');

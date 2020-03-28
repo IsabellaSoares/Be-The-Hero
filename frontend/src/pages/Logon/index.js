@@ -10,8 +10,9 @@ import heroesImg from '../../assets/heroes.png';
 const Logon = () => {
 
   const [id, setID] = useState('');
+  const history = useHistory();
 
-  function handleLogin (e) {
+  async function handleLogin (e) {
     e.preventDefault();
 
     try {
@@ -31,7 +32,7 @@ const Logon = () => {
       <section className="form">
         <img src={logoImg} alt="Be The Hero" />
 
-        <form>
+        <form onSubmit={handleLogin}>
           <h1>Faça seu logon</h1>
 
           <input
