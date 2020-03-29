@@ -15,14 +15,14 @@ This is the repository for Semana OmniStack project, offered by Rockeseat in Mar
 
 ### How to launch this application?
 
-## Back-end
+#### Back-end
 
 Inside the back-end root folder, run `npm install` and `npm start`. The last command will start the Nodemon environment at _3333_ port. This environment will be listen the back-end during the application execution, so don't close the terminal or cancel the Nodemon execution.
 
-## Front-end
+#### Front-end
 
 Inside the front-end root folder, run `npm install` and `npm start`. The last command will start the React app at _3000_ port.
 
-## Mobile
+#### Mobile
 
 Inside the mobile root folder, run `npm install` and `npm start`. You can make tests using mobile's emulators. If you want to use Expo, you need to execute `expo start` instead `npm start`. Install Expo app in your smartphone and scan the QRcode generated in your browser after the _expo start_ command. Expo supports live reload and permit use Whatsapp and Email integrations.
