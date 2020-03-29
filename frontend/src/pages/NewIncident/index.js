@@ -24,7 +24,7 @@ const NewIncident = () => {
     }
 
     try {
-      const response = await api.post('incidents', data, {
+      await api.post('incidents', data, {
         headers: {
           Authorization: ongID
         }
@@ -46,7 +46,7 @@ const NewIncident = () => {
           <p>Descreva o caso detalhadamente para encontrar um herói para resolver isso.</p>
 
           <Link className="back-link" to="/profile">
-            <FiArrowLeft size={16} color="#E02041" />
+            <FiArrowLeft size={16} color="#E02041" style={{marginRight: '8px'}} />
             Voltar para home
           </Link>
         </section>

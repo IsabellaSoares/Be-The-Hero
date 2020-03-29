@@ -68,7 +68,7 @@ const Profile = () => {
             <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
 
             <button onClick={() => handleDeleteIncident(incident.id)} type="button">
-              <FiTrash2 size={20} color="#a8a8b3" />
+              <FiTrash2 size={20} color="#a8a8b3" style={{marginRight: '8px'}} />
             </button>
           </li>
         ))}
