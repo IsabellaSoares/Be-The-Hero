@@ -5,7 +5,7 @@ This is the repository for Semana OmniStack project, offered by Rockeseat in Mar
 Technologies:
 
 - React Native + Expo
-- Express
+- Express + Celebrate middleware (Joi validation library)
 - Nodemon
 - SQLite
 - Knex.js
